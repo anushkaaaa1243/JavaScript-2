@@ -45,3 +45,24 @@ user2[1].email
 // console.log(Object.entries(tinderUser))      //returns an array of arrays [["email","anu@gmail.]]
 
 // console.log(tinderUser.hasOwnProperty("name"));       // false
+
+const course = {
+    name : "Web Development",
+    duration : "6 months",
+    skills : ["HTML","CSS","JavaScript"],
+    instructor:{   
+        name : "John Doe",
+        designation : "Senior Developer"
+    }
+}
+
+course.instructor
+const {instructor,name,skills}=course
+console.log(instructor,name,skills)
+
+
+// {
+//     "name":"Anushka",
+//     "courseName":"JS in Hindi",
+//     "price" : "free"
+// }
