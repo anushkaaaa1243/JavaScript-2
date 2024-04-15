@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess a Number</title>
+</head>
+<style>
+    body{
+        background-color: #212121;
+        color: white;
+    }
+    #wrapper{
+        display: flex;
+        flex-direction: column;
+       
+        align-items: center;
+    }
+    #wrapper h1{
+        border: 2px solid black;
+        background-color: black;
+        color: white;
+        width: 500px;
+        text-align: center;
+        
+
+    }
+    .guessSubmit  {
+        background-color: black;
+        border: 2px solid black;
+        color: white;
+        text-align: center;
+        width: 150px;
+        padding: 7px;
+     
+        margin-top: 10px;
+        border-radius: 10px;
+
+    }
+    #guess{
+        font-size: 25px;
+
+    }
+    .guessField{
+        margin-top: 10px;
+        padding: 7px;
+    }
+</style>
+<body>
+    <div id="wrapper">
+        <h1>Number Guessing Game</h1>
+        <p>Try and guess a random number between 1 and 100</p>
+        <p>You have 10 attempts to guess the right number</p>
+        <br>
+        <br  class="form">
+            <label for="guessField" id="guess">Guess a number:</label>
+            <input type="text" id="guessField" class="guessField">
+            <button type="text" id="subt" value="Submit guess" class="guessSubmit">Submit</button>
+        </form>
+        <div class="resultParas">
+            <p>Previous Guesses: <span class="guesses"></span></p>
+            <p>Guesses Remaining:  <span class="lastResult">10</span> </p>
+            <div class="lowOrHi"></div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="index.js"></script>
+</html>
